@@ -1,0 +1,36 @@
+<script>
+
+tablica1 = [9,3,'7','3']; //22
+tablica2 = ['5','0',9,3,2,1,'9',6,7]; //42
+tablica3 = ['3',6,6,0,'5',8,5,'6','2',0]; //41
+
+function SumaElementow(tablica){
+var suma = 0;
+for (i in tablica) suma += parseInt(tablica[i]); 
+return suma;
+}
+
+
+
+
+
+alert(SumaElementow(tablica1));
+alert(SumaElementow(tablica2));
+alert(SumaElementow(tablica3));
+
+
+
+function SumaElementowNumber(tablica){
+var suma = 0;
+for (i in tablica) 
+   if (typeof(tablica[i])=='number')
+          suma += parseInt(tablica[i]); 
+return suma;
+}
+
+
+alert(SumaElementowNumber(tablica1));
+alert(SumaElementowNumber(tablica2));
+alert(SumaElementowNumber(tablica3));
+
+  </script>

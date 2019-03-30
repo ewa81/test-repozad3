@@ -1,0 +1,25 @@
+<script>
+
+tablica = ["shepp","shepp","wolf","shepp","shepp","shepp","sheep"];
+
+
+function Ostrzegam(tablica){
+
+tablica = tablica.reverse();
+
+var gdzie_jest_wilk = tablica.indexOf("wolf");
+
+if (gdzie_jest_wilk==0) {
+                        alert("Pls stop eating my sheeps");
+                        }
+                        else
+                        {
+                        alert("Sheep number " + gdzie_jest_wilk + "  run ");
+                        }
+
+}
+
+
+Ostrzegam(tablica);
+
+  </script>

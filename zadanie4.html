@@ -1,0 +1,28 @@
+<script>
+
+tablica1 = [1,2,3,4,5];
+tablica2 = [1,-2,3,4,5];
+tablica3 = [];
+tablica4 = [-2,-3];
+
+
+function sumaDodatnich(total, num) {
+
+
+
+  if (num>0){  
+   return total + num; 
+  }
+  else
+  {
+    return total;
+  }
+}
+
+if (tablica1.length) alert(tablica1.reduce(sumaDodatnich)); else alert(0);
+if (tablica2.length) alert(tablica2.reduce(sumaDodatnich)); else alert(0);
+if (tablica3.length) alert(tablica3.reduce(sumaDodatnich)); else alert(0);
+if (tablica4.length) alert(tablica4.reduce(sumaDodatnich)); else alert(0);
+
+
+  </script>
